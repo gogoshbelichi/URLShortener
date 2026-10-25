@@ -1,0 +1,15 @@
+@URLShortener_HostAddress = https://localhost:7012
+
+POST {{URLShortener_HostAddress}}/urlshortener/create?url=test.test.com/lofd
+Accept: application/json
+
+
+###
+
+GET {{URLShortener_HostAddress}}/1
+Accept: text/plain
+
+###
+
+GET {{URLShortener_HostAddress}}/openapi/v1.json
+Accept: application/json
